@@ -1,0 +1,8 @@
+I decided to use the spotify chart as my example
+
+I decided to sort the list by names instead of rating on the chart
+
+I am still getting used to Git bash so i put this code
+$ sort -t"," -k3 music.csv > art.txt
+which allows me to sort the third collumn in the list of the csv file 
+and put it in the art.txt file 
