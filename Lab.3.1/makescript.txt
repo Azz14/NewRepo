@@ -1,0 +1,7 @@
+
+output:awkscript.sh
+        sh awkscript.sh #Runs second
+awkscript.sh:
+        echo "Print out the top songs on spotify charts"
+        echo "---------------------------------"
+        awk -F "," '$2 == "Songs", $3 == "Artist" {print $1}' music.csv #Runs first
