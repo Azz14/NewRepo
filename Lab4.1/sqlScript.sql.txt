@@ -1,0 +1,46 @@
+End of banner message from server
+aaakinye@146.245.252.28's password:
+Last login: Thu Aug  5 15:48:46 2021 from ool-18b9aece.dyn.optonline.net
+[aaakinye@sol28 ~]$ sqlite3 music.db
+SQLite version 3.7.17 2013-05-20 00:56:22
+Enter ".help" for instructions
+Enter SQL statements terminated with a ";"
+sqlite> CREATE TABLE music(
+   ...> "Number" int,
+   ...> "Song" text,
+   ...> "Artist" text,
+   ...> "Streams" int);
+sqlite> .schema
+CREATE TABLE music(
+"Number" int,
+"Song" text,
+"Artist" text,
+"Streams" int);
+sqlite> login as: aaakinye
+   ...> Pre-authentication banner message from server:
+   ...> | Access to Brooklyn College computers is restricted to authorized users
+   ...> |         and approved educational and research purposes, only.
+   ...> End of banner message from server
+   ...> aaakinye@146.245.252.28's password:
+   ...> Last login: Thu Aug  5 15:48:46 2021 from ool-18b9aece.dyn.optonline.net
+   ...> [aaakinye@sol28 ~]$ sqlite3 music.db
+   ...> SQLite version 3.7.17 2013-05-20 00:56:22
+   ...> Enter ".help" for instructions
+   ...> Enter SQL statements terminated with a ";"
+   ...> sqlite> CREATE TABLE music(
+   ...>    ...> "Number" int,
+   ...>    ...> "Song" text,
+   ...>    ...> "Artist" text,
+   ...>    ...> "Streams" int);
+   ...> sqlite> .schema
+   ...> CREATE TABLE music(
+   ...> "Number" int,
+   ...> "Song" text,
+   ...> "Artist" text,
+   ...> "Streams" int);
+   ...> sqlite>
+   ...>
+   ...> ^C.mode csv
+   ...> .import music.csv music
+   ...> select * from music;
+   ...>
